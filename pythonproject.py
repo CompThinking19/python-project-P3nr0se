@@ -6,23 +6,46 @@
 
 class Solar_System:
     def class_method(system):
-        def __init__(system, bodies, star, planets, moons):
+        def __init__(system, bodies, star, planets, moons, Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune):
             system.bodies = bodies
             system.star = star
             system.planets = planets
             system.moons = moons
+            system.planetoids = planetoids
+            system.Mercury = Mercury
+            system.Venus = Venus
+            system.Earth = Earth
+            system.Mars = Mars
+            system.Jupiter = Jupiter
+            system.Saturn = Saturn
+            system.Uranus = Uranus
+            system.Neptune = Neptune
             def bodies:
-                bodies = [Sol, Mercury, Venus, Earth, Luna, Mars, Deimos, Phobos, Ceres, Asteroid_Belt, Jupiter, Adrastea, Aitne, Amalthea, Ananke, Aoede, Arche, Autonoe, Callisto, Carme, Cllirrhoe, Carpo, Chaldene, Cyliene, Elara, Erinome, Euanthe, Eukelade, Euporie, Europa, Eurydome, Ganymede, Harpalyke, Hegemone, Helike, Hemippe, Himalia, Io, Iocaste, Isonone, Kale, Kallichore, Kalyke, Kore, Leda, Lysithea, Magaclite, Metis, Mneme, Orthosie, Pasiphae, Pasithee, Prcidike, Sinope, Sponde, Taygete, Thebe, Thelxinoe, Themisto, Thyone, Saturn, Aegir, Albiorix, Anthe, Atlas, Bebhionn, Bergelmir, Bestia, Calypso, Daphnis, Dione, Enceladus, Epimetheus, Erriapo, Farbauti, Fenrir, Fornjor, Greip, Hate, Helene, Hyperion, Hyrokkin, Iapetus, Ijiraq, Janus, Jarnsaxa, Kari, Kiviuq, Loge, Methone, Mimas, Mundilfari, Narvi, Paaliaq, Pan, Pandora, Phoebe, Polydeuces, Prometheus, Rhea, Siarnq, Skathi, Skoll, Surtur, Suttungr, Tarqeq, Tarvos, Telesto, Tethys, Thrymr, Titan, Ymir, Uranus, Ariel, Belinda, Bianca, Caliban, Cordelia, Cressida, Cupid, Desdemona, Ferdinand, Fransisco, Juliet, Mab, Margaret, Miranda, Oberon, Ophelia, Perdita, Portia, Prospero, Puck, Rosalind, Setebos, Stephano, Sycorax, Titania, Trinculo, Umbriel, Neptune, Despina, Galatea, Halimede, Larissa, Laomedeia, Naiad, Nereid, Neso, Proteus, Psamathe, Sao, Thalassa, Triton, Pluto, Charon, Nix, Hydra, Kerberos, Styx, Makemake, Eris, Dysnomia, Haumea, Namaka, Hiiaka]
+                bodies = [Sol, Mercury, Venus, Earth, Luna, Mars, Deimos, Phobos, Ceres, Asteroid_Belt, Jupiter, Io, Europa, Ganamede, Callisto, Saturn, Mimas, Enceladus, Tethys, Dione, Rhea, Titan, Hyperion, Iapetus, Phoebe, Uranus, Miranda, Ariel, Umbriel, Titania, Oberon, Neptune, Proteus, Triton, Nereid, Pluto, Charon, Nix, Hydra, Kerberos, Styx, Haumea, Namaka, Hi'laka, Makemake, Eris, Dysnomia ]
             def star:
                 star = [Sol]
             def planets:
-                planets = [MErcury, Venus, Earth, Mars, Jupiter, ]
-    
-        
+                planets = [Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune]
+            def moons:
+                moons = [Luna, Deimos, Phobos, Io, Europa, Ganamede, Callisto, Mimas, Enceladus, Tethys, Dione, Rhea, Titan, Hyperion, Iapetus, Phoebe, Miranda, Ariel, Umbriel, Titania, Oberon, Proteus, Triton, Neraid, Charon, Nix, Hydra, Kerberos, Styx, Namaka, Hi'laka, Dysnomia
+            def planetoids:
+                planetoids = [Ceres, Pluto, Haumea, Makemake, Eris]
+            def Mercury:
+                Mercury = [Mercury]
+            def Venus:
+                Venus = [Venus]
+            def Earth:
+                Earth = [Earth, Luna]
+            def Mars:
+                Mars = [Mars, Deimos, Phobos, Ceres]
+            def Jupiter:
+                Jupiter = [Jupiter, Io, Europa, Ganamede, Callisto]
+            def Saturn:
+                Saturn = [Saturn, Mimas, Enceladus, Tethys, Dione, Rhea, Titan, Hperion, Iapetus, Phoebe]
+            def Uranus:
+                Uranus = [Uranus, Miranda, Ariel, Umbriel, Titania, Oberon]
+            def Neptune:
+                Neptune = [Neptune, Proteus, Triton, Nereid]
 
 
 # In[ ]:
-
-
-
-
