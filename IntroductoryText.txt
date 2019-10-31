@@ -1,0 +1,25 @@
+++Incoming Transmission++
+++Transmission Tagged as High Priority from Space Command++
+++Decrypting Transmission...++
+++Successful Decryption. Unpacking Message...++
+
+"Greetings, Commander! The Executives in the U.N wanted us to congratulate you on your promotion.
+As of now, you are officially in charge of the First Terran Stellar Expedition!
+We hope you don't mind the extra company on the I.S.S, because as of this moment,
+resources will be transitioned from the ground into orbit.
+It is your job to put them to good use. As you know, the folks in the U.N can be rather stingy when it comes to group projects,
+This is why until we can independently collect resources from the other Celestial Bodies in system,
+it is absolutely imperative that resources are only used when necessary. You guys off world are going to have to lay off the
+parties and orbital drag racing for a bit."
+
+++Mission Parameters Loading...++
+
+"Our first objective here at the F.T.S.E will be the serious occupation of Earth's natural satellite Luna.
+It is confirmed by earlier probes that there are valuable fuel resources on the moon.
+Your job will be the construction of the first sustainable human colony on a celestial body separate from Mother Earth.
+The resources available to you will be displayed shortly, as soon as the Orbital Logistics department sends the information.
+If our first landing on the moon decades ago was a small step for man, this will be the first true giant leap for mankind."
+
+--Transmission Over--
+
+Type "Display Logistics" to see your Resources!
