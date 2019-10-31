@@ -22,4 +22,4 @@ If our first landing on the moon decades ago was a small step for man, this will
 
 --Transmission Over--
 
-Type "Display Logistics" to see your Resources!
+Type "Logistics" to see your Resources!

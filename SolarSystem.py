@@ -3,7 +3,7 @@
 
 # In[3]:
 
-
+#Attempting to list all planets and celestial bodies in the game.
 class Solar_System:
     def class_method(system):
         def __init__(system, bodies, star, planets, moons, Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune):
@@ -30,21 +30,21 @@ class Solar_System:
                 moons = [Luna, Deimos, Phobos, Io, Europa, Ganamede, Callisto, Mimas, Enceladus, Tethys, Dione, Rhea, Titan, Hyperion, Iapetus, Phoebe, Miranda, Ariel, Umbriel, Titania, Oberon, Proteus, Triton, Neraid, Charon, Nix, Hydra, Kerberos, Styx, Namaka, Hi'laka, Dysnomia
             def planetoids:
                 planetoids = [Ceres, Pluto, Haumea, Makemake, Eris]
-            def Mercury:
+            def Mercury_Orbit:
                 Mercury = [Mercury]
-            def Venus:
+            def Venus_Orbit:
                 Venus = [Venus]
-            def Earth:
+            def Earth_Orbit:
                 Earth = [Earth, Luna]
-            def Mars:
+            def Mars_Orbit:
                 Mars = [Mars, Deimos, Phobos, Ceres]
-            def Jupiter:
+            def Jupiter_Orbit:
                 Jupiter = [Jupiter, Io, Europa, Ganamede, Callisto]
-            def Saturn:
+            def Saturn_Orbit:
                 Saturn = [Saturn, Mimas, Enceladus, Tethys, Dione, Rhea, Titan, Hperion, Iapetus, Phoebe]
-            def Uranus:
+            def Uranus_Orbit:
                 Uranus = [Uranus, Miranda, Ariel, Umbriel, Titania, Oberon]
-            def Neptune:
+            def Neptune_Orbit:
                 Neptune = [Neptune, Proteus, Triton, Nereid]
 
 
