@@ -21,7 +21,7 @@ class Solar_System:
             system.Saturn = Saturn
             system.Uranus = Uranus
             system.Neptune = Neptune
-            # trying to define certain categories
+            # trying to define certain categories of objects within the solar system
             def bodies:
                 bodies = [Sol, Mercury, Venus, Earth, Luna, Mars, Deimos, Phobos, Ceres, Asteroid_Belt, Jupiter, Io, Europa, Ganamede, Callisto, Saturn, Mimas, Enceladus, Tethys, Dione, Rhea, Titan, Hyperion, Iapetus, Phoebe, Uranus, Miranda, Ariel, Umbriel, Titania, Oberon, Neptune, Proteus, Triton, Nereid, Pluto, Charon, Nix, Hydra, Kerberos, Styx, Haumea, Namaka, Hi'laka, Makemake, Eris, Dysnomia ]
             def star:
