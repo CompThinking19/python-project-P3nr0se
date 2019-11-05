@@ -7,6 +7,7 @@
 class Solar_System:
     def class_method(system):
         def __init__(system, bodies, star, planets, moons, Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune):
+            #trying to equivilate class items
             system.bodies = bodies
             system.star = star
             system.planets = planets
@@ -20,6 +21,7 @@ class Solar_System:
             system.Saturn = Saturn
             system.Uranus = Uranus
             system.Neptune = Neptune
+            # trying to define certain categories
             def bodies:
                 bodies = [Sol, Mercury, Venus, Earth, Luna, Mars, Deimos, Phobos, Ceres, Asteroid_Belt, Jupiter, Io, Europa, Ganamede, Callisto, Saturn, Mimas, Enceladus, Tethys, Dione, Rhea, Titan, Hyperion, Iapetus, Phoebe, Uranus, Miranda, Ariel, Umbriel, Titania, Oberon, Neptune, Proteus, Triton, Nereid, Pluto, Charon, Nix, Hydra, Kerberos, Styx, Haumea, Namaka, Hi'laka, Makemake, Eris, Dysnomia ]
             def star:
@@ -30,6 +32,7 @@ class Solar_System:
                 moons = [Luna, Deimos, Phobos, Io, Europa, Ganamede, Callisto, Mimas, Enceladus, Tethys, Dione, Rhea, Titan, Hyperion, Iapetus, Phoebe, Miranda, Ariel, Umbriel, Titania, Oberon, Proteus, Triton, Neraid, Charon, Nix, Hydra, Kerberos, Styx, Namaka, Hi'laka, Dysnomia
             def planetoids:
                 planetoids = [Ceres, Pluto, Haumea, Makemake, Eris]
+            #trying to define the important bodies in relation to the main planets.
             def Mercury_Orbit:
                 Mercury = [Mercury]
             def Venus_Orbit:
