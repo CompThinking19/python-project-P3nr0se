@@ -3,3 +3,7 @@
 "Lunar Landing achieved, Captain! For the first time in human history, we have established
 a self-sustaining base on the surface of the moon. Our presence there is now permanent, and
 Luna Base will be able to use the moon's resources to further our project."
+
+++Opening Lunar Options++
+
+"Commander, please type in MoonBase to see your options."

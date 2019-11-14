@@ -17,8 +17,10 @@ class Logistics:
     MarsLand != yes
     MarsBase != yes
     MarsMine != yes
+    MarsFuel != yes
     MoonLand != yes
     MoonBase != yes
+    MoonFuel != yes
     def __init__(self, fuel, materials, hrm, armour_materials, cold_resistant_materials):
         #Fueltank is meant to define the resource used to get from place to place.
         fueltank = fuel
@@ -30,7 +32,7 @@ class Logistics:
         am = armour_materials
     #cold_resistant_materials are meant to be used for ships that travel past Jupiter
         crm = cold_resistant_materials
-    #This is meant to be the user's method of interfacing with the resources that they have access to
+    #This is meant to be the user's method of interfacing with the resources that they have access to.
     def getrockets(self):
         return numrockets
     def getfuel(self):
@@ -101,6 +103,13 @@ class Logistics:
             am = 15
             materials_list += 25
             return "Orders confirmed, commander! Minerals being stockpiled"
+    def MarsFuel(self):
+        if MarsBase != yes or MarsFuel == yes:
+            return "Something's not right here! We aren't on mars or we have already extracted fuel from Mars!"
+        if MarsBase == yes and MarsFuel != yes:
+            print "Orders confirmed, commander! Fuel being stockpiled"
+            fueltank += 25
+            return MarsFuel == yes
     def BuildMoon(self):
         if MarsLand != yes:
             return "We aren't on the Moon Commander!"
@@ -114,9 +123,19 @@ class Logistics:
                 return "Type in 'MoonBase' to acess its functions Commander!"
     def MoonBase(self):
         if MarsBase == yes:
-            print "The Moon Base has a variety of construction options. Please type 'MoonMine' to generate materials. Otherwise please type 'MarsFuel' to generate fuel!"
+            print "The Moon Base has a variety of construction options. Please type 'MoonMine' to generate materials. Otherwise please type 'MoonFuel' to generate fuel!"
     def MoonMine(self):
         if MoonBase != yes or MoonMine == yes:
-            return "Something's not right here! We aren't on mars or we have already mined Mars!"
+            return "Something's not right here! We aren't on mars or we have already mined the Moon!"
         if MoonBase == yes and MoonMine != yes:
             print "Orders confirmed, commander! Minerals being stockpiled"
+            materials_list += 15
+            crm += 25
+            return MoonMine == yes
+    def MoonFuel(self):
+        if MoonBase != yes or MoonFuel == yes:
+            return "Something's not right here! We aren't on mars or we have already extracted fuel from the Moon!"
+        if MoonBase == yes and MoonFuel != yes:
+            print "Orders confirmed, commander! Fuel being stockpiled"
+            fueltank += 50
+            return MoonFuel == yes
