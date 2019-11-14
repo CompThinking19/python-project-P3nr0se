@@ -2,3 +2,8 @@
 
 "Mars Landing Achieved Captain! This marks the first time in history that a human being has stepped foot on mars!
 Our presence on the red planet is now assured, and we can begin using the planet's resources."
+
+
+++Opening Mars Options++
+
+"Commander, please type 'BuildMars' to see the options available to you."

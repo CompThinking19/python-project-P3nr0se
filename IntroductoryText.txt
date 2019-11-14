@@ -22,4 +22,9 @@ If our first landing on the moon decades ago was a small step for man, this will
 
 --Transmission Over--
 
-Type "Logistics" to see your Resources!
+Commander, we have specific resources available to us... you may type the key phrases
+ "'getfuel', 'getmats', 'getarmour', 'gethotmats', 'getrockets' and 'getcoldmats' Get" to see your Resources!
+ Unfortunately, because the computer systems on the I.S.S haven't actually been updated since the
+ second millennia or something, all command keys will be case sensitive.
+
+ From there, consider the building requirements.
