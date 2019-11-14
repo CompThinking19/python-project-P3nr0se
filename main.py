@@ -20,6 +20,7 @@ class Logistics:
     MarsFuel != yes
     MoonLand != yes
     MoonBase != yes
+    MoonMine != yes
     MoonFuel != yes
     def __init__(self, fuel, materials, hrm, armour_materials, cold_resistant_materials):
         #Fueltank is meant to define the resource used to get from place to place.
@@ -92,43 +93,43 @@ class Logistics:
             if imput == yes:
             materials_list -= 10
             MarsBase == Yes
-                return "Type in 'MarsBase' to acess its functions Commander!"
+                return "Type in 'Logistics.MarsBase' to acess its functions Commander!"
     def MarsBase(self):
         if MarsBase == yes:
-            print "The Mars Base has a variety of construction options. Please type 'MarsMine' to generate materials. Otherwise please type 'MarsFuel' to generate fuel!"
+            print "The Mars Base has a variety of construction options. Please type 'Logistics.MarsMine' to generate materials. Otherwise please type 'Logistics.MarsFuel' to generate fuel!"
     def MarsMine(self):
         if MarsBase != yes or MarsMine == yes:
             return "Something's not right here! We aren't on mars or we have already mined Mars!"
         if MarsBase == yes and MarsMine != yes:
             am = 15
             materials_list += 25
-            return "Orders confirmed, commander! Minerals being stockpiled"
+            return "Orders confirmed, commander! Minerals being stockpiled! (+15 Armour Materials, + 25 Materials)"
     def MarsFuel(self):
         if MarsBase != yes or MarsFuel == yes:
             return "Something's not right here! We aren't on mars or we have already extracted fuel from Mars!"
         if MarsBase == yes and MarsFuel != yes:
-            print "Orders confirmed, commander! Fuel being stockpiled"
+            print "Orders confirmed, commander! Fuel being stockpiled! (+25 Fuel)"
             fueltank += 25
             return MarsFuel == yes
     def BuildMoon(self):
-        if MarsLand != yes:
+        if MoonLand != yes:
             return "We aren't on the Moon Commander!"
         if materials_list != 10:
             return "We don't have the Materials to Construct anything Commander!"
-        if MarsLand == yes and materials_list == 10:
+        if MoonLand == yes and materials_list == 10:
             print "We may construct a based on Moon! Yes or No Commander?"
             if imput == yes:
             materials_list -= 10
-            MarsBase == Yes
-                return "Type in 'MoonBase' to acess its functions Commander!"
+            MoonBase == Yes
+                return "Type in 'Logistics.MoonBase' to acess its functions Commander!"
     def MoonBase(self):
-        if MarsBase == yes:
-            print "The Moon Base has a variety of construction options. Please type 'MoonMine' to generate materials. Otherwise please type 'MoonFuel' to generate fuel!"
+        if MoonBase == yes:
+            print "The Moon Base has a variety of construction options. Please type 'Logistics.MoonMine' to generate materials. Otherwise please type 'Logistics.MoonFuel' to generate fuel!"
     def MoonMine(self):
         if MoonBase != yes or MoonMine == yes:
             return "Something's not right here! We aren't on mars or we have already mined the Moon!"
         if MoonBase == yes and MoonMine != yes:
-            print "Orders confirmed, commander! Minerals being stockpiled"
+            print "Orders confirmed, commander! Minerals being stockpiled! (+15 Materials. + 25 Cold Resistant Materials)"
             materials_list += 15
             crm += 25
             return MoonMine == yes
@@ -136,6 +137,6 @@ class Logistics:
         if MoonBase != yes or MoonFuel == yes:
             return "Something's not right here! We aren't on mars or we have already extracted fuel from the Moon!"
         if MoonBase == yes and MoonFuel != yes:
-            print "Orders confirmed, commander! Fuel being stockpiled"
+            print "Orders confirmed, commander! Fuel being stockpiled! (+50 Fuel)"
             fueltank += 50
             return MoonFuel == yes

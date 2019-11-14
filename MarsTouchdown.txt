@@ -6,4 +6,4 @@ Our presence on the red planet is now assured, and we can begin using the planet
 
 ++Opening Mars Options++
 
-"Commander, please type 'BuildMars' to see the options available to you."
+"Commander, please type 'Logistics.BuildMars' to see the options available to you."

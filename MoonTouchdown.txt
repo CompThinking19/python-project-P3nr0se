@@ -6,4 +6,4 @@ Luna Base will be able to use the moon's resources to further our project."
 
 ++Opening Lunar Options++
 
-"Commander, please type in MoonBase to see your options."
+"Commander, please type in 'Logistics.MoonBase' to see your options."
