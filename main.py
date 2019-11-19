@@ -95,14 +95,14 @@ class Logistics:
         if materials_list != 10:
             return "We don't have the Materials to Construct anything Commander!"
         if MarsLand == True and materials_list == 10:
-            print "We may construct a based on Mars! Yes or No Commander?"
+            print "We may construct a base on Mars! True or False Commander? (-10 Materials)"
             if imput == True:
                 materials_list -= 10
                 MarsBase == True
                 print "Type in 'MarsBase' to acess its functions Commander!"
     def MarsBase(self):
         if MarsBase == True:
-            print "The Mars Base has a variety of construction options. Please type '.MarsMine' to generate materials. Otherwise please type 'MarsFuel' to generate fuel!"
+            print "The Mars Base has a variety of construction options. Please type 'MarsMine' to generate materials. Otherwise please type 'MarsFuel' to generate fuel!"
     def MarsMine(self):
         if MarsBase != True or MarsMine == True:
             return "Something's not right here! We aren't on mars or we have already mined Mars!"
@@ -123,7 +123,7 @@ class Logistics:
         if materials_list != 10:
             return "We don't have the Materials to Construct anything Commander!"
         if MoonLand == True and materials_list == 10:
-            print "We may construct a based on Moon! True or No Commander?"
+            print "We may construct a based on Moon! True or False Commander? (-10 Materials)"
             if imput == True:
                 materials_list -= 10
                 MoonBase == True
