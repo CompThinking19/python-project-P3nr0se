@@ -66,7 +66,9 @@ class Logistics:
             fueltank -= 15
             #trying to add a condition that recognizes human presence on the moon
             MoonLand == True
-            open(MoonTouchdown.txt)
+            moontext = open(MoonTouchdown.txt)
+            moonopen = moontext.read()
+            print moonopen
         else:
             if numrockets == 0:
                 print "We need a rocket to get to the moon!"
@@ -79,7 +81,9 @@ class Logistics:
             fueltank -= 25
             #trying to add a condition that recognizes human presence on Mars
             MarsLand == True
-            open(MarsTouchdown.txt)
+            marstext = open(MarsTouchdown.txt)
+            marsopen = marstext.read()
+            print marsopen
         else:
             if numrockets == 0:
                 print "We need a rocket to get to mars!"
@@ -95,10 +99,10 @@ class Logistics:
             if imput == True:
                 materials_list -= 10
                 MarsBase == True
-                print "Type in 'Logistics.MarsBase' to acess its functions Commander!"
+                print "Type in 'MarsBase' to acess its functions Commander!"
     def MarsBase(self):
         if MarsBase == True:
-            print "The Mars Base has a variety of construction options. Please type 'Logistics.MarsMine' to generate materials. Otherwise please type 'Logistics.MarsFuel' to generate fuel!"
+            print "The Mars Base has a variety of construction options. Please type '.MarsMine' to generate materials. Otherwise please type 'MarsFuel' to generate fuel!"
     def MarsMine(self):
         if MarsBase != True or MarsMine == True:
             return "Something's not right here! We aren't on mars or we have already mined Mars!"
@@ -123,10 +127,10 @@ class Logistics:
             if imput == True:
                 materials_list -= 10
                 MoonBase == True
-                print "Type in 'Logistics.MoonBase' to acess its functions Commander!"
+                print "Type in 'MoonBase' to acess its functions Commander!"
     def MoonBase(self):
         if MoonBase == True:
-            print "The Moon Base has a variety of construction options. Please type 'Logistics.MoonMine' to generate materials. Otherwise please type 'Logistics.MoonFuel' to generate fuel!"
+            print "The Moon Base has a variety of construction options. Please type 'MoonMine' to generate materials. Otherwise please type 'MoonFuel' to generate fuel!"
     def MoonMine(self):
         if MoonBase != True or MoonMine == True:
             return "Something's not right here! We aren't on mars or we have already mined the Moon!"
