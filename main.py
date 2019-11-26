@@ -6,7 +6,7 @@ import re
 Start = open("IntroductoryText.txt")
 Intro = Start.read()
 print Intro
-#Attempting to create a resource system for the game
+#Attempting to create a resource system for the game. All of these resources will be used tor the sake of allowing the playor to do certain things.
 class Logistics:
     # Defined initial values of resources.
     numrockets = 0
@@ -25,7 +25,7 @@ class Logistics:
     MoonMine = False
     MoonFuel = False
     def __init__(self, fuel, materials, hrm, armour_materials, cold_resistant_materials):
-        #Fueltank is meant to define the resource used to get from place to place.
+    #Fueltank is meant to define the resource used to get from place to place.
         fueltank = fuel
     #materials_list is meant to define the base material used to construct ships or buildings
         materialslog = materials
@@ -35,7 +35,7 @@ class Logistics:
         am = armour_materials
     #cold_resistant_materials are meant to be used for ships that travel past Jupiter
         crm = cold_resistant_materials
-    #This is meant to be the user's method of interfacing with the resources that they have access to.
+    #This is meant to be the user's method of interfacing with the resources that they have access to. I want to make this as clear as possible to the player, though I'm not sure I've succeeded in doing so.
     def getrockets(self):
         return numrockets
     def getfuel(self):
@@ -55,16 +55,16 @@ class Logistics:
         if MarsLand != True:
             print "Traveling to mars requires twenty-five fuel."
         print "More resources are gained by constructing bases on the surface of the planet, which will be explained upon touchdown"
-    #Used to construct a basic rocket.
+    #Used to construct a basic rocket. Rockets will be required to reach certain planets in the system.
     def BuildRocket(self):
         materialslog -= 10
         numrockets += 1
-    #Used to Launch a Rocket to the moon
+    #Used to Launch a Rocket to the moon from earth. The cost is fixed, and it should be the first planet to go to.  I should also make the costs os this endevour more clear to the player.
     def EarthtoLuna(self):
         if numrockets > 0 and fueltank >= 15:
             numrockets -= 1
             fueltank -= 15
-            #trying to add a condition that recognizes human presence on the moon
+            #trying to add a condition that recognizes human presence on the moon. This is considered when the player desires to make a base on a planet.
             MoonLand == True
             moontext = open(MoonTouchdown.txt)
             moonopen = moontext.read()
@@ -89,6 +89,7 @@ class Logistics:
                 print "We need a rocket to get to mars!"
             else:
                 print "We need more fuel!"
+    #Command that is meant to construct a base on mars. Conditions to prevent building if there is no landing, or if there is a shortage of materials.
     def BuildMars(self):
         if MarsLand != True:
             return "We aren't on Mars Commander!"
