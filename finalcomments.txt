@@ -1,0 +1,11 @@
+Comments
+You do a great job of documenting key aspects of the code and giving a sense of what each element does. This is especially important since you've got so many key variables that can be tough to track. There could be a greater sense of "why", but overall, these comments were strong.
+
+Code Quality
+I like that you thought in classes for this project, and I think that's really the way to go for this kind of work. That being said, I think more classes are in order: Logistics doesn't seem like the place to do something like put methods about moving from place to place. Maybe a Rocket Ship class?
+
+Ambition
+This is an admirably ambitious project, and I appreciate your effort in realizing as much of it as you have at this early date. Your README could have used a bit more about the narrative of the project, however.
+
+Aesthetics
+The game never asked me for input, so that reduces my ability to really engage this category. However, I can look at your code and see the unimplemented pieces and see that you're well on the way to realizing much of this, barring some of the issues that I raised when talking about code quality.
